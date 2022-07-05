@@ -1,0 +1,77 @@
+/* #map-div{
+    float: left;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    margin : 200px 50px;
+} */
+html{
+    display:block;
+}
+body{
+    overflow-x:hidden;
+    max-width: 100%;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#daumRoughmapContainer1656645710667{
+    position: relative;
+    overflow: hidden;
+    background: url(http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);
+    visibility: visible;
+}
+#map-div #map-info > p:first-child {
+    font-weight: 600;
+    margin-bottom: 15px;
+    
+}
+#map-div #map-info > p:last-child {
+    color: #7b7b7b;
+}
+
+#map-div {
+    margin: 200px 200px;
+    margin-left: 200px;
+    display: flex;
+    gap: 90px;
+}
+    @media screen and (max-width: 1300px){
+    #map-div {
+        gap: 50px;
+        margin: 200px 50px;
+    }
+}
+  
+    @media screen and (max-width: 940px){
+        #map-div {
+            gap: 50px;
+        }
+}
+
+    @media screen and (max-width: 640px){
+        #map-div{
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 0;
+            margin-bottom:300px;
+        }
+        #map-info-wrap{
+            flex-wrap:wrap;
+            flex-direction:row;
+            width:90%;
+            gap:0;
+        }
+        #map-info p:last-child{
+            line-height:25px;
+            font-size:15px;
+        }
+        #daumRoughmapContainer1656645710667{
+            
+        }
+}
+    @media screen and (max-width: 430px){
+        #map-info{
+            width:100%;
+        }
+    }

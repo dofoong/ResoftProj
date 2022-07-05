@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://kit.fontawesome.com/2666f55015.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <!-- container 시작 -->
+    <div class="container">
+        <!-- map  -->
+        <section id="map">
+            <div id="map-div">                
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1656645710667" class="root_daum_roughmap root_daum_roughmap_landing">
+                </div>
+                <div id="map-info-wrap">
+                    <div id="map-info">
+                        <p>TEL</p>
+                        <p>(053) 475-2110</p>
+                    </div>
+                    <div id="map-info">
+                        <p>FAX</p>
+                        <p>(0504) 257-5966</p>
+                    </div>
+                    <div id="map-info">
+                        <p>E-MAIL</p>
+                        <p>call@resoft.kr</p>
+                    </div>
+                    <div id="map-info">
+                        <p>ADDRESS</p>
+                        <p>(41260)<br>
+                            대구광역시 동구 동대구로 465,대구스케일업허브(Dash) 704호<br>
+                            (주)리소프트
+                        </p>
+                    </div>
+                </div>            
+            </div>
+            
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-img">
+                <img src="../img/푸터로고.png">
+                </div>
+                <div class="footer-context">
+                <p id="footer-h">주식회사 리소프트는 새로운 소프트웨어로 진화하여 여러분꼐 응답드리고자 노력하겠습니다.</p>
+                    <div class="footer-info">
+                        <p><span>상호.</span> <span>(주)리소프트</span></p>
+                        <p><span>대표인사.</span> <span>오유나</span></p>
+                        <p><span>사용자등록번호.</span> <span>722-81-02219</span></p>
+                        <p><span>개인정보책임자.</span> <span>이현지</span></p>
+                        <br><br>
+                        <p><span>주소.</span> 
+                            <span>(41260)대구광역시 동구 동대구로 465,대구스케일업허브(DASH) 704호
+                                (신천동 106)</span></p>
+                        <p><span>전화.</span> <span>(053)475-2110</span></p>
+                        <p><span>팩스.</span> <span>(0504) 257-5966</span></p>
+                        <p><span>이메일.</span> <span>call@resoft.kr</span></p>
+                    </div>
+                    <br>
+                <p id="footer-footer">Copyright(c) RESOFT CO.LTD.All right reserved.</p>
+                </div>
+            </div>
+            <div class="topBtn">
+                <button type="button" class="move">
+                    <a href="#header"><i class="fa-solid fa-angle-up"></i></a>
+                </button>
+                <p>TOP</p>
+            </div>
+        </footer>
+
+    </div> <!--container 끝-->    
+    <!--  2. 설치 스크립트
+       	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+         -->
+     <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <!-- 3. 실행 스크립트 -->
+     <script charset="UTF-8">
+	        new daum.roughmap.Lander({
+		         "timestamp" : "1656645710667",
+		         "key" : "2at79",
+		         "mapWidth" : "640",
+		         "mapHeight" : "360"
+	           }).render();
+                </script>
+</body>
+</html>
