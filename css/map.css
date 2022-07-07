@@ -12,21 +12,23 @@
     margin-left: 200px;
     display: flex;
     gap: 90px;
-    position: relative;
+    position: relative; 
 }
-
+/*face in은 JS로 처리했음*/
 #daumRoughmapContainer1656645710667{
     width: 524px;
     height:630px;
+    opacity:0;
     position: relative;
     overflow: hidden;
     background: url(http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);
     background-size: cover;
     background-repeat: no-repeat;
     visibility: visible;
+    
 }
-#map-info-wrap{
-    display:flex;
+#map-info-wrap{ 
+    opacity:0;
     flex-direction: column;
     margin-top:50px;
 }
