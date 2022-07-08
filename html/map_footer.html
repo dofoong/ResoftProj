@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../css/map.css">
     <link rel="stylesheet" href="../css/footer.css">
     <script src="https://kit.fontawesome.com/2666f55015.js" crossorigin="anonymous"></script>
-    
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <style>
     body{
         margin: 0;
@@ -27,6 +28,7 @@
     </header>
     <!-- container 시작 -->
     <div class="container">
+        
         <!-- map  -->
         <section id="map">
             <div id="map-div">                
@@ -90,7 +92,9 @@
             </div>
         </footer>
 
-    </div> <!--container 끝-->    
+    </div> <!--container 끝--> 
+
+     
     <!--  2. 설치 스크립트
        	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
          -->
@@ -104,6 +108,8 @@
 		         "mapWidth" : "640",
 		         "mapHeight" : "630"
 	           }).render();
-                </script>
+     </script>
+                <!-- map.js 적용 -->
+    <script src="../JS/map.js"></script>  
 </body>
 </html>
