@@ -16,6 +16,7 @@ div {
     display: block;
 }
 
+/* Resoft 로고 */
 .box_wrap {
     width: 100%;
     background-color: #04088a;
@@ -35,7 +36,7 @@ div {
     position: absolute;
     bottom: 0;
 }
-
+/* 아이콘 */
 li {
     display: list-item;
     text-align: -webkit-match-parent;
@@ -113,7 +114,7 @@ table {
     border: 3px solid #dddddd;
     border-radius: 50%;
 }
-
+/* +버튼 */
 .clients-img-wrap .load {
     background: transparent;
     cursor: pointer;
