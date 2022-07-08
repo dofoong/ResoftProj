@@ -1,42 +1,106 @@
-
-.news_wrap {
-    width: 100%;
-    padding: 80px 0;
-    background-color: #f8f8f8;
-    padding: 100px 20px 40px 20px;
-    box-sizing: border-box;
-    height: auto;
+.news_wrap{width: 100%; padding: 80px 0; background-color: #f8f8f8;}
+.news_wrap .news_content_wrap{max-width: 1400px; margin: 0 auto; overflow: hidden;}
+.news_wrap .btn_wrap {float: right; margin-top: 20px;}
+.news_wrap .btn_wrap .more {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	border: 1px solid var(--pink-color);
+	background: #f6f6f636;
+	/* background: transparent;  */
+	/* border-radius: 46px;
+	-moz-border-radius: 46px;
+	-webkit-border-radius: 46px;
+	-o-border-radius: 46px; */
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	font-family: 'Montserrat', 'Noto Sans KR';
+	font-weight: 600;
+	line-height: 40px;
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-* {
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
+.news_wrap .btn_wrap .more span{position:relative; z-index:1; color:white;}
+.news_wrap .btn_wrap .more:before{
     display: block;
+	position: absolute;
+	top: 0px;
+	left: -130%;
+	content: "";
+	width: 130%;
+	height: 100%;
+	border-radius: 0 42px 42px 0;
+	opacity: 0;
+	filter: Alpha(opacity = 0);
+	background: var(--pink-color);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s}
+.news_wrap .btn_wrap .more:hover span{color:#fff;}
+.news_wrap .btn_wrap .more:hover:before{left:0px; opacity:1.0;filter:Alpha(opacity=100);}
+.news_wrap .btn_wrap .more:hover:after{opacity:0;filter:Alpha(opacity=0); visibility:hidden;}
+
+.news_h{padding-top: 50px; margin: 70px 0px 30px 0px;}
+.news_list .slide a {display: block;}
+.news_list .slide a:hover .new_img img {transform: scale(1.1);}
+.new_body {margin: 20px 0;}
+.new_body .cate {display: block; font-size: 15px; font-weight: 600; color: white; margin-bottom: 10px; letter-spacing: 1.5px;}
+.new_body .news_tit {font-size: 18px; color: white; line-height: 1.4; width: 98%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.container_slide{max-width: 1400px;margin: 55px auto; clear: both;}
+/* .slick-slide {margin: 0px 20px;} */
+
+.slick-slide .new_img {overflow: hidden; height: auto;}
+.slick-slide .new_img img {width: 100%; transform: scale(1); transition: transform .3s;}
+
+.slick-slider{position: relative;display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
-body {
-    max-width: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
+
+.slick-list{position: relative;display: block;overflow: hidden;margin: 0;padding: 0;}
+.slick-list:focus{outline: none;}
+.slick-list.dragging{cursor: pointer;cursor: hand;}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
 }
-body {
-    line-height: 1;
-}
-body {
-    font-family: ''Noto Sans KR', sans-serif';
-    position: relative;
-    word-break: keep-all;
-}
-body {
-    font-family: 'NanumSquareRound';
-    position: relative;
-    font-weight: 500;
-}
+
+.slick-track{position: relative;top: 0;left: 0;display: block;}
+.slick-track:before,
+.slick-track:after
+{display: table;content: '';}
+.slick-track:after{clear: both;}
+.slick-loading .slick-track{visibility: hidden;}
+
+.slick-slide{display: none; float: left; /* height: 100%; */ min-height: 1px; margin: 0 10px;}
+[dir='rtl'] .slick-slide{float: right;}
+.slick-slide img{display: block;}
+.slick-slide.slick-loading img{display: none;}
+.slick-slide.dragging img{pointer-events: none;}
+.slick-initialized .slick-slide{display: block; outline: none; height: auto;}
+.slick-loading .slick-slide{visibility: hidden;}
+.slick-vertical .slick-slide{display: block;height: auto;border: 1px solid transparent;}
+.slick-arrow.slick-hidden {display: none;}
