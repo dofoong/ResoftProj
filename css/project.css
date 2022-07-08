@@ -1,3 +1,48 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InfinitySans-BoldA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+     font-family: 'S-CoreDream-9Black';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+    font-family: 'EBSJSKMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSJSKMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{box-sizing: border-box;}
+body{font-family: 'NanumSquareRound'; position: relative; font-weight: 500; }
+button{outline: none;}
+br{opacity: 0;}
+
+
 .news_wrap{width: 100%; padding: 80px 0; background-color: #f8f8f8;}
 .news_wrap .news_content_wrap{max-width: 1400px; margin: 0 auto; overflow: hidden;}
 .news_wrap .btn_wrap {float: right; margin-top: 20px;}
@@ -104,3 +149,43 @@
 .slick-loading .slick-slide{visibility: hidden;}
 .slick-vertical .slick-slide{display: block;height: auto;border: 1px solid transparent;}
 .slick-arrow.slick-hidden {display: none;}
+
+@media screen and (min-width: 1217px) and (max-width: 1720px){
+	
+	.b_wrap{max-width: 1550px; margin: 0 auto;}
+	.b_box{width: 49%; height: 300px; background-color: #000; float: left; margin-bottom: 30px;}
+	.b_box:HOVER{box-shadow: 0px 7px 25px #c7c7c7; transition: all 0.4s;}
+	.b_box:NTH-CHILD(odd){margin-right: 1%;}
+	.b_box h1{box-sizing: border-box; padding: 2.2rem 2rem 1rem; font-size: 1.7rem; font-family: 'InfinitySans-RegularA1';}
+	.b_box p{box-sizing: border-box; padding: 0rem 2rem; font-size: 1.1rem; letter-spacing: -1px; width: 60%; line-height: 1.5;}
+}
+
+@media screen and (max-width:1500px) {
+	.header .bannerText-wrap{left: 2%;}
+	.header .banner-wrap .img-wrap{right: 2%;}
+	.box_wrap img{left: 2%;}
+	.box_wrap .box_btn{right: 2%;}
+}
+@media screen and (max-width: 940px){
+	body {max-width: 767px; overflow-x: hidden;}
+	.title .h_tit{font-size: 28px;}
+	.slick-slide .new_img{height: 45vw;}
+}
+
+@media screen and (max-width: 767px){
+	/* 사업영역 */
+	.main{width: 100%; margin: 0px auto 0;}
+	.b_wrap{max-width: 100%; margin: 0 auto; height: auto; padding: 40px 0;}
+	.b_wrap .busi_content_wrap {padding: 60px 20px;}
+	
+	.news_wrap {padding: 100px 20px 40px 20px; box-sizing: border-box; height: auto;}
+	.new_body .cate {font-size: 14px;}
+	.new_body .news_tit {font-size: 16px;}
+}
+@media screen and (max-width: 640px){
+	.banner_wrap ul li{background: url(/user/main/banner_2_430.png) no-repeat; background-size: 100%; height: 153vw;}
+    body {max-width: 640px; overflow-x: hidden;}
+   
+	/* 인문사회 index */
+	.box_wrap .box_info ul li{flex-direction: column;}
+}
