@@ -10,13 +10,8 @@
 	font-size: 15px;
 	color: white;
 	text-align: center;
-	border: 1px solid var(--pink-color);
+	border: 1px solid #ee72d8;
 	background: #f6f6f636;
-	/* background: transparent;  */
-	/* border-radius: 46px;
-	-moz-border-radius: 46px;
-	-webkit-border-radius: 46px;
-	-o-border-radius: 46px; */
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -38,7 +33,7 @@
 	border-radius: 0 42px 42px 0;
 	opacity: 0;
 	filter: Alpha(opacity = 0);
-	background: var(--pink-color);
+	background: #ee72d8;;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -104,3 +99,14 @@
 .slick-loading .slick-slide{visibility: hidden;}
 .slick-vertical .slick-slide{display: block;height: auto;border: 1px solid transparent;}
 .slick-arrow.slick-hidden {display: none;}
+@media screen and (max-width: 940px){
+    .title .h_tit{font-size: 28px;}
+    .slick-slide .new_img{height: 45vw;}
+}
+@media screen and (max-width: 767px){
+    .news_wrap {padding: 100px 20px 40px 20px; box-sizing: border-box; height: auto;}
+    .slick-slide .new_img{height: 63vw;}
+}
+@media screen and (max-width: 430px){
+    .slick-slide .new_img {height: 95vw;}
+}
