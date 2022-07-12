@@ -21,6 +21,14 @@ body {
 div {
     display: block;
 }
+.back.flip-item {
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+ }
 .layoutImg{
     display: block;
     background: rgba(20, 21, 22, 0.445);
