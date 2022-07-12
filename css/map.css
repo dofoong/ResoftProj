@@ -32,16 +32,16 @@
     flex-direction: column;
     margin-top:50px;
 }
-#map-div #map-info p{
+#map-div .map-info p{
     font-size: 18px;
 }
 
-#map-div #map-info > p:first-child {
+#map-div .map-info > p:first-child {
     font-weight: 600;
     margin-bottom: 15px;
     
 }
-#map-div #map-info > p:last-child {
+#map-div .map-info > p:last-child {
     color: #7b7b7b;
 }
 
@@ -54,7 +54,7 @@
     }
     #daumRoughmapContainer1656645710667{
         width:706px;
-        height:585px;
+        height:100%;
     }
 }
 @media screen and (max-width: 640px){
@@ -70,20 +70,21 @@
             width:90%;
             gap:0;
         }
-        #map-info{
+        .map-info{
             width: calc(100%/2);
             margin-bottom:  30px;
         }
-        #map-div #map-info > p:last-child {
+        #map-div .map-info > p:last-child {
             font-size:  15px;
         }
     
         #daumRoughmapContainer1656645710667{
             margin: 0 20px;
+            width: 90%;
         }
 }
     @media screen and (max-width: 430px){
-        #map-info{
+        .map-info{
             width:100%;
         }
     }
