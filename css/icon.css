@@ -12,6 +12,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
 }
 
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1;
+    max-width: 100%;
+}
+
 div {
     display: block;
 }
@@ -49,7 +55,6 @@ ul {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 
 ol, ul {
@@ -93,7 +98,7 @@ table {
 
 .clients-img-wrap ul li p {
     font-size: 16px;
-    padding: 15px;
+    padding-top: 15px;
     word-break: break-all;
 }
 
@@ -127,9 +132,17 @@ table {
     color: #04088a;
 }
 
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
 @media screen and (max-width:1500px) {
     .box_wrap img {
         left: 2%;
+    }
+    .box_wrap .box_btn {
+        right: 2%;
     }
     .clients-img-wrap {
         margin: 130px auto;
