@@ -3009,3 +3009,7 @@
     };
 
 }));
+
+<script type="text/javascript">
+      $.noConflict();
+</script>
