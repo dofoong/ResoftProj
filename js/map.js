@@ -1,10 +1,11 @@
+
 /*스크롤 이미지 애니메이션*/
-var daumRoughmapContainer1656645710667 = document.querySelector('#daumRoughmapContainer1656645710667');
+var map = document.querySelector('#map');
 var mapInfoWrap = document.querySelector('#map-info-wrap');
 
 $(document).ready(function() {
   $(window).scroll(function () {
-    $(daumRoughmapContainer1656645710667).each(function (i) {
+    $(map).each(function (i) {
 
         var bottom_of_map = $(this).offset().top + $(this).outerHeight();
         var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -24,3 +25,4 @@ $(document).ready(function() {
     });
 });
 }); 
+
