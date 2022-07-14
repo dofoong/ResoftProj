@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/02_card.css">
     <link rel="stylesheet" href="./css/03_slide.css">
+    <!-- <link rel="stylesheet" href="./css/test.css"> -->
     <link rel="stylesheet" href="./css/04_eco.css">
     <link rel="stylesheet" href="./css/icon.css">
     <link rel="stylesheet" href="./css/map.css">
@@ -21,15 +22,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <script src="https://kit.fontawesome.com/de3ecee9a8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- slick - slider script  -->
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Slick 불러오기 -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    
+
     <title>Resoft</title>
 </head>
 
@@ -94,7 +93,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./앱개발.jpg" style="height: 100%; width: 100%;">
+                        <img src="./img/앱개발.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             Android 앱 개발<br>iOS 앱 개발<br>플랫폼 기획 및 설계
                         </div>
@@ -112,7 +111,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./웹구축.jpg" style="height: 100%; width: 100%;">
+                        <img src="./img/웹구축.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             반응형 홈페이지 구축<br>데이터베이스 구축<br>빅데이터 구축
                         </div>
@@ -131,7 +130,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./AI기술개발.jpg" style="height: 100%; width: 100%;">
+                        <img src="./img/AI기술개발.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             AI 대화형 챗봇<br>자동 객체인식 검출기<br>딥러닝 학습 모델
                         </div>
@@ -150,7 +149,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./XR콘텐츠.jpg" style="height: 100%; width: 100%;">
+                        <img src="./img/XR콘텐츠.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             실감형 플랫폼 구축<br>가상현실 콘텐츠 제작<br>게임콘텐츠제작
                         </div>
@@ -166,172 +165,58 @@
                 <h2 class="h_tit">프로젝트</h2>
                 <p class="subTitleEng">resoft projects</p>
             </div>
-            <div class="btn_wrap">
-                <!-- <a href="#" class="more"><span>more</span></a> -->
-            </div>
         </div>
-
         <div class="container_slide">
-            <section class="news_list slider slick-initialized slick-slider">
-                <div aria-live="polite" class="slick-list draggable">
-                    <div class="slick-track" role="listbox"
-                        style="opacity: 1; width: 3809px; transform: translate3d(-1465px, 0px, 0px);">
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide01" style="width: 273px;" data-slick-index="-4"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">대구인문사회대학<br></p>
-                                        <img class="logo" src="./img/inmun_logo.png" alt="[WEB]">
-                                    </div>
-                                </div>
-                            </a>
+            <section class="news_list">
+                <div class="slide">
+                    <a href="javascript:void(0);">
+                        <div class="new_img">
+                            <div class="cont">
+                                <p class="work-title">대구인문사회대학<br></p>
+                                <img class="logo" src="./img/inmun_logo.png" alt="[WEB]">
+                            </div>
                         </div>
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide02" style="width: 273px;" data-slick-index="-3"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">제15회 달서 하프 비대면 마라톤대회<br></p>
-                                        <img class="logo" src="./img/달서구청로고.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="javascript:void(0);">
+                        <div class="new_img">
+                            <div class="cont">
+                                <p class="work-title">제15회 달서 하프 비대면 마라톤대회<br></p>
+                                <img class="logo" src="./img/달서구청로고.png" alt="[APP]">
+                            </div>
                         </div>
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide03" style="width: 273px;" data-slick-index="-2"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">제8회 한성백제 비대면 마라톤대회<br></p>
-                                        <img class="logo" src="./img/한성백제마라톤.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="javascript:void(0);">
+                        <div class="new_img">
+                            <div class="cont">
+                                <p class="work-title">제8회 한성백제 비대면 마라톤대회<br></p>
+                                <img class="logo" src="./img/한성백제마라톤.png" alt="[APP]">
+                            </div>
                         </div>
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide04" style="width: 273px;" data-slick-index="-1"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">2020 대구 마스크 쓰GO 코로나 극복 레이스<br></p>
-                                        <img class="logo" src="./img/컬러풀대구로고.jpg" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="javascript:void(0);">
+                        <div class="new_img">
+                            <div class="cont">
+                                <p class="work-title">2020 대구 마스크 쓰GO 코로나 극복 레이스<br></p>
+                                <img class="logo" src="./img/컬러풀대구로고.jpg" alt="[APP]">
+                            </div>
                         </div>
-                        <div class="slide slick-slide" tabindex="-1" role="option" aria-describedby="slick-slide00"
-                            style="width: 273px;" data-slick-index="0" aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">송파구청 송파둘레길 비대면 걷기대회<br></p>
-                                        <img class="logo" src="./img/송파둘레길.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="javascript:void(0);">
+                        <div class="new_img">
+                            <div class="cont">
+                                <p class="work-title">송파구청 송파둘레길 비대면 걷기대회<br></p>
+                                <img class="logo" src="./img/송파둘레길.png" alt="[APP]">
+                            </div>
                         </div>
-                        <div class="slide slick-slide slick-current slick-active" tabindex="-1" role="option"
-                            aria-describedby="slick-slide01" style="width: 273px;" data-slick-index="1"
-                            aria-hidden="false">
-                            <a href="javascript:void(0);" tabindex="0">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">대구인문사회대학<br></p>
-                                        <img class="logo" src="./img/inmun_logo.png" alt="[WEB]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slick-slide slick-active" tabindex="-1" role="option"
-                            aria-describedby="slick-slide02" style="width: 273px;" data-slick-index="2"
-                            aria-hidden="false">
-                            <a href="javascript:void(0);" tabindex="0">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">제15회 달서 하프 비대면 마라톤대회<br></p>
-                                        <img class="logo" src="./img/달서구청로고.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slick-slide slick-active" tabindex="-1" role="option"
-                            aria-describedby="slick-slide03" style="width: 273px;" data-slick-index="3"
-                            aria-hidden="false">
-                            <a href="javascript:void(0);" tabindex="0">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">제8회 한성백제 비대면 마라톤대회<br></p>
-                                        <img class="logo" src="./img/한성백제마라톤.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slick-slide slick-active" tabindex="-1" role="option"
-                            aria-describedby="slick-slide04" style="width: 273px;" data-slick-index="4"
-                            aria-hidden="false">
-                            <a href="javascript:void(0);" tabindex="0">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">2020 대구 마스크 쓰GO 코로나 극복 레이스<br></p>
-                                        <img class="logo" src="./img/컬러풀대구로고.jpg" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide00" style="width: 273px;" data-slick-index="5"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">송파구청 송파둘레길 비대면 걷기대회<br></p>
-                                        <img class="logo" src="./img/송파둘레길.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide01" style="width: 273px;" data-slick-index="6"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">대구인문사회대학<br></p>
-                                        <img class="logo" src="./img/inmun_logo.png" alt="[WEB]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide02" style="width: 273px;" data-slick-index="7"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">제15회 달서 하프 비대면 마라톤대회<br></p>
-                                        <img class="logo" src="./img/달서구청로고.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slick-slide slick-cloned" tabindex="-1" role="option"
-                            aria-describedby="slick-slide03" style="width: 273px;" data-slick-index="8"
-                            aria-hidden="true">
-                            <a href="javascript:void(0);" tabindex="-1">
-                                <div class="new_img" style="height:300px; background-color: #ffffff;">
-                                    <div class="cont">
-                                        <p class="work-title">제8회 한성백제 비대면 마라톤대회<br></p>
-                                        <img class="logo" src="./img/한성백제마라톤.png" alt="[APP]">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </section>
         </div>
@@ -562,21 +447,22 @@
     </div>
     <!-- map -->
     <div id="mapsection">
-        <div id="map-div">                
+        <div id="map-div">
 
             <!-- 1. 지도 노드 -->
             <div id="map" style="height:600px;"></div>
-            <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ac540a5e75f65b1bdd006f2e7c030b96"></script>
+            <script type="text/javascript"
+                src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ac540a5e75f65b1bdd006f2e7c030b96"></script>
             <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                     mapOption = {
-                    center: new kakao.maps.LatLng(35.87179, 128.62492), // 지도의 중심좌표
-                    level: 3, // 지도의 확대 레벨
-                    mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
-                }; 
+                        center: new kakao.maps.LatLng(35.87179, 128.62492), // 지도의 중심좌표
+                        level: 3, // 지도의 확대 레벨
+                        mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+                    };
 
                 // 지도를 생성한다 
-                var map = new kakao.maps.Map(mapContainer, mapOption); 
+                var map = new kakao.maps.Map(mapContainer, mapOption);
 
                 // 지도에 마커를 생성하고 표시한다
                 var marker = new kakao.maps.Marker({
@@ -608,7 +494,7 @@
             </div>
         </div>
 
-        </div>
+    </div>
     <!-- footer -->
     <footer>
         <div class="footer-wrap">
@@ -655,7 +541,7 @@
         }).render();
     </script>
     <!-- map.js 적용 -->
-    <script src="./js/03.slide.js"></script>
+    <script src="./js/03_slide.js"></script>
     <script src="./JS/map.js"></script>
     <script src="./js/icon.js"></script>
     <script src="./js/scroll.js"></script>
