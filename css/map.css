@@ -15,7 +15,7 @@
     position: relative; 
 }
 /*face in은 JS로 처리했음*/
-#daumRoughmapContainer1656645710667{
+#map{
     width: 524px;
     height:630px;
     opacity:0;
@@ -52,7 +52,7 @@
         margin: 200px 50px;
         
     }
-    #daumRoughmapContainer1656645710667{
+    #map{
         width:706px;
         height:100%;
     }
@@ -78,7 +78,7 @@
             font-size:  15px;
         }
     
-        #daumRoughmapContainer1656645710667{
+        #map{
             margin: 0 20px;
             width: 90%;
         }
