@@ -94,7 +94,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./img/앱개발.jpg" style="height: 100%; width: 100%;">
+                        <img src="./앱개발.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             Android 앱 개발<br>iOS 앱 개발<br>플랫폼 기획 및 설계
                         </div>
@@ -112,7 +112,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./img/웹구축.jpg" style="height: 100%; width: 100%;">
+                        <img src="./웹구축.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             반응형 홈페이지 구축<br>데이터베이스 구축<br>빅데이터 구축
                         </div>
@@ -131,7 +131,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./img/AI기술개발.jpg" style="height: 100%; width: 100%;">
+                        <img src="./AI기술개발.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             AI 대화형 챗봇<br>자동 객체인식 검출기<br>딥러닝 학습 모델
                         </div>
@@ -150,7 +150,7 @@
                     </li>
                     <div class="back flip-item">
                         <a href="javascript:void(0);" class="layoutImg"></a>
-                        <img src="./img/XR콘텐츠.jpg" style="height: 100%; width: 100%;">
+                        <img src="./XR콘텐츠.jpg" style="height: 100%; width: 100%;">
                         <div class="app-text">
                             실감형 플랫폼 구축<br>가상현실 콘텐츠 제작<br>게임콘텐츠제작
                         </div>
@@ -561,11 +561,30 @@
         </button>
     </div>
     <!-- map -->
-    <div id="map">
-        <div id="map-div">
+    <div id="mapsection">
+        <div id="map-div">                
+
             <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1656645710667" class="root_daum_roughmap root_daum_roughmap_landing">
-            </div>
+            <div id="map" style="height:600px;"></div>
+            <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ac540a5e75f65b1bdd006f2e7c030b96"></script>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = {
+                    center: new kakao.maps.LatLng(35.87179, 128.62492), // 지도의 중심좌표
+                    level: 3, // 지도의 확대 레벨
+                    mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+                }; 
+
+                // 지도를 생성한다 
+                var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+                // 지도에 마커를 생성하고 표시한다
+                var marker = new kakao.maps.Marker({
+                    position: new kakao.maps.LatLng(35.87179, 128.62492), // 마커의 좌표
+                    map: map // 마커를 표시할 지도 객체
+                });
+            </script>
+
             <div id="map-info-wrap">
                 <div class="map-info">
                     <p>TEL</p>
@@ -588,7 +607,8 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        </div>
     <!-- footer -->
     <footer>
         <div class="footer-wrap">
