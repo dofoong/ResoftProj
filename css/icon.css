@@ -42,7 +42,7 @@ li {
     text-align: -webkit-match-parent;
 }
 
-ul {
+.clients-img-wrap ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
