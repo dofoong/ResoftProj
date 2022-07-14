@@ -26,7 +26,7 @@
             display: block;
             font-family: 'Noto Sans KR', sans-serif;
         }
-    </style>
+  </style>
 </head>
 
 <body>
@@ -38,12 +38,30 @@
 
         <!-- map  -->
         <section>
-            <div id="map">
+            <div id="mapsection">
             <div id="map-div">                
 
                 <!-- 1. 지도 노드 -->
-                <div id="daumRoughmapContainer1656645710667" class="root_daum_roughmap root_daum_roughmap_landing">
-                </div>
+                <div id="map" style="height:600px;"></div>
+                <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ac540a5e75f65b1bdd006f2e7c030b96"></script>
+	            <script>
+		            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+	            	    mapOption = {
+		                center: new kakao.maps.LatLng(35.87179, 128.62492), // 지도의 중심좌표
+		                level: 3, // 지도의 확대 레벨
+		                mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+		            }; 
+
+                    // 지도를 생성한다 
+                    var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+                    // 지도에 마커를 생성하고 표시한다
+                    var marker = new kakao.maps.Marker({
+                        position: new kakao.maps.LatLng(35.87179, 128.62492), // 마커의 좌표
+                        map: map // 마커를 표시할 지도 객체
+                    });
+	            </script>
+
                 <div id="map-info-wrap">
                     <div class="map-info">
                         <p>TEL</p>
@@ -109,22 +127,8 @@
 
 
 
-     <!--  2. 설치 스크립트
-       	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-         -->
-         <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-         <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-         <!-- 3. 실행 스크립트 -->
-          <script charset="UTF-8">
-                 new daum.roughmap.Lander({
-                      "timestamp" : "1656645710667",
-                      "key" : "2at79",
-                      "mapWidth" : "100%",
-                      "mapHeight" : "600",
-                    }).render();
-          </script>
-                     <!-- map.js 적용 -->
+    <!-- map.js 적용 -->
          <script src="../JS/map.js"></script>  
   
 </body>
