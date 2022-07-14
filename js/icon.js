@@ -1,3 +1,4 @@
+
 // 아이콘 8개
     //push : list의 i번째 추가
     if (window.matchMedia("screen and (max-width: 1217px)").matches) {
@@ -83,4 +84,6 @@
 }
 function preventClick(e){
     e.preventDefault()
+
 }
+
