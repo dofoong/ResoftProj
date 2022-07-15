@@ -6,7 +6,10 @@
     align-items: center;
     margin : 200px 50px; 
 } */
-
+#mapsection{
+    align-items: center;
+    
+}
 #map-div {
     margin: 200px 200px;
     margin-left: 200px;
@@ -16,8 +19,9 @@
 }
 /*face in은 JS로 처리했음*/
 #map{
-    width: 524px;
-    height:630px;
+    width: 65%;
+    height:45vw;
+    max-width:1400px;
     opacity:0;
     position: relative;
     overflow: hidden;
@@ -28,14 +32,11 @@
     
 }
 #map-info-wrap{ 
+    display:flex;
     opacity:0;
-    display: flex;
     flex-direction: column;
     margin-top:75px;
     gap: 35px;
-}
-#map-div .map-info p{
-    font-size: 18px;
 }
 
 #map-div .map-info > p:first-child {
@@ -51,12 +52,18 @@
 @media screen and (max-width: 1300px){
     #map-div {
         gap: 50px;
-        margin: 200px 50px;
-        
+        margin: 200px 50px;  
+    }
+    #map-info-wrap{
+        width:40%;
     }
     #map{
-        width:706px;
-        height:100%;
+        height:585px;     
+    }
+}
+@media screen and (max-width: 1217px){
+    #map{
+        height:650px;
     }
 }
 @media screen and (max-width: 640px){
@@ -71,6 +78,7 @@
             flex-direction:row;
             width:90%;
             gap:0;
+            margin:0;
         }
         .map-info{
             width: calc(100%/2);
@@ -81,12 +89,13 @@
         }
     
         #map{
-            margin: 0 20px;
             width: 90%;
+            height:600px;
         }
 }
     @media screen and (max-width: 430px){
         .map-info{
             width:100%;
+            margin:0;
         }
     }
