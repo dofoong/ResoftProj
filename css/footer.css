@@ -79,11 +79,16 @@ footer{
 
 @media screen and (max-width: 430px){
     .footer-wrap {
-        padding: 30px 15px;
+        padding: 30px 15px;   
+    }
+    .footer-img img{
+        width:130px;
+    }
+    .footer-context{
+        width:85%;
+        margin: 10px;
     }
 }
-
-
 
 
 
