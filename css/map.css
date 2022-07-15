@@ -35,8 +35,13 @@
     display:flex;
     opacity:0;
     flex-direction: column;
+<<<<<<< HEAD
     margin-top:50px;
     font-size: 18px;
+=======
+    margin-top:75px;
+    gap: 35px;
+>>>>>>> aa12db9d0a6a701f723a60fdb610c302360162d6
 }
 
 
