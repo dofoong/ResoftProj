@@ -517,7 +517,7 @@ ul {
     /* slide */
     /* eco */
     .cus_wrap {
-        background: url(./img/web.png) no-repeat;
+        background: url("./img/web.png") no-repeat;
         position: relative;
         background-position: center;
         max-width: 1400px;
@@ -751,7 +751,7 @@ ul {
         background: #04088a; 
     }
     .footer-wrap {
-        background-image: url(./img/footer2.png);
+        background-image: url("./img/footer2.png");
         background-size: cover;
         margin: 0;
         padding: 100px 50px ;
