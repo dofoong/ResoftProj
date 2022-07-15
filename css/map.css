@@ -34,10 +34,9 @@
 #map-info-wrap{ 
     display:flex;
     opacity:0;
-    flex-direction: column;    
+    flex-direction: column;
     margin-top:75px;
-    font-size: 18px;
-    gap:35px;
+    gap: 35px;
 }
 
 #map-div .map-info > p:first-child {
