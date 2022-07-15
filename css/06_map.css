@@ -1,11 +1,4 @@
-/* #map-div{
-    /* float: left;
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center;
-    margin : 200px 50px; 
-} */
+
 #mapsection{
     align-items: center;
     
@@ -35,13 +28,9 @@
     display:flex;
     opacity:0;
     flex-direction: column;
-<<<<<<< HEAD
-    margin-top:50px;
     font-size: 18px;
-=======
     margin-top:75px;
     gap: 35px;
->>>>>>> aa12db9d0a6a701f723a60fdb610c302360162d6
 }
 
 
@@ -68,11 +57,14 @@
     }
 }
 @media screen and (max-width: 1217px){
+    /* map */
     #map{
         height:650px;
     }
+    /* map */
 }
 @media screen and (max-width: 640px){
+    /* map */
         #map-div{
             flex-direction: column-reverse;
             align-items: center;
@@ -98,6 +90,7 @@
             width: 90%;
             height:600px;
         }
+        /* map */
 }
     @media screen and (max-width: 430px){
         .map-info{

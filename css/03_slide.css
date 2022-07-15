@@ -190,15 +190,19 @@
 	background-color: #ffffff;
 	}
 @media screen and (max-width: 940px) {
+	/* slide */
 	.title .h_tit {
 		font-size: 28px;
 	}
+	/* slide */
 }
 
 @media screen and (max-width: 767px) {
+	/* slide */
 	.news_wrap {
 		padding: 100px 20px 40px 20px;
 		box-sizing: border-box;
 		height: auto;
 	}
+	/* slide */
 }

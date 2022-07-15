@@ -1,4 +1,4 @@
-.cus_wrap {
+  .cus_wrap {
     background: url(../img/web.png) no-repeat;
     position: relative;
     background-position: center;
@@ -57,6 +57,7 @@
   
   /*  eco 반응형 적용 */
   @media screen and (max-width:1500px) {
+    /* eco */
       .cus_wrap {
       height: 60vw;
     }
@@ -79,16 +80,20 @@
       top: 90%;
       right: 2%;
     }
+    /* eco */
   }
   @media screen and (max-width:1217px){
+    /* eco */
     .cus_wrap .eco-clean-earth p:first-child {
       font-size: 30px;
     }
       .cus_wrap .eco-clean-earth p:last-child {
       font-size: 25px;
     }
+    /* eco */
   }
   @media screen and (max-width: 940px){
+    /* eco */
     body {max-width: 767px; overflow-x: hidden;}
     .cus_wrap{
       height: auto;
@@ -115,8 +120,10 @@
       margin: 0;
       position: unset;
     }
+    /* eco */
   }
   @media screen and (max-width: 640px){
+    /* eco */
     .cus_wrap .eco-clean-earth {
       line-height: 35px;
     }
@@ -132,8 +139,10 @@
     .cus_wrap .ecoce-img-wrap {
       margin-top: 40px;
     }
+    /* eco */
   }
   @media screen and (max-width: 430px){
+    /* eco */
     .cus_wrap .cus_content > h3 {
       font-size: 30px;
     }
@@ -147,5 +156,6 @@
       .cus_wrap .eco-clean-earth p:last-child {
       font-size: 20px;
     }
+    /* eco */
   }
   

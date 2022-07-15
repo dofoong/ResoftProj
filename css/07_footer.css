@@ -3,13 +3,12 @@ footer{
     background: #04088a; 
 }
 .footer-wrap {
-    background-image: url(./img/footer2.png);
+    background-image: url(../img/footer2.png);
     background-size: cover;
     margin: 0;
     padding: 100px 50px ;
     display: flex;
     gap : 60px;
-   
 }
 #footer-h{
     color:#fff;
@@ -44,6 +43,7 @@ footer{
     }
 }
 @media screen and (max-width: 940px){
+    /* footer */
     #footer-h{
         font-size: 16px;
     }
@@ -53,9 +53,10 @@ footer{
     .footer-wrap{
         gap:30px;
     }
-
+    /* footer */
 }
 @media screen and (max-width: 640px){
+    /* footer */
     .footer-wrap {
         padding: 50px;
         display: block;
@@ -74,16 +75,23 @@ footer{
         height: auto;
         float: none;
     }
-   
+   /* footer */
 }
 
 @media screen and (max-width: 430px){
+    /* footer */
     .footer-wrap {
-        padding: 30px 15px;
+        padding: 30px 15px;   
     }
+    .footer-img img{
+        width:130px;
+    }
+    .footer-context{
+        width:85%;
+        margin: 10px;
+    }
+    /* footer */
 }
-
-
 
 
 
