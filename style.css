@@ -751,7 +751,7 @@ ul {
         background: #04088a; 
     }
     .footer-wrap {
-        background-image: url("./img/footer2.png");
+        background: url("./img/footer2.png");
         background-size: cover;
         margin: 0;
         padding: 100px 50px ;
@@ -1168,6 +1168,10 @@ body {max-width: 767px; overflow-x: hidden;}
     /* main */
     .header {
         height: 640px;
+    }
+    .header .bannerText-wrap {
+        top: 45%;
+        left: calc(50% - 161.5px);
     }
 
     .header .bannerText p:first-child {
